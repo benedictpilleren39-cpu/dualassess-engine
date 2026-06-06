@@ -1,0 +1,186 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jun 6, 2026, 12:28:39 PM
+    Author     : user
+*/
+
+/* Reset standard defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dcdfe6;
+    overflow: hidden;
+}
+
+.main-header {
+    background-color: #0000ff;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 3px double #ffffff;
+}
+
+.main-header h1 {
+    font-size: 2.6rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.main-header p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.middle-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #e4e7ed;
+    border-right: 2px solid #909399;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subject-btn {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 0.9rem;
+    background-color: #f5f7fa;
+    border: 1px solid #909399;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.15);
+}
+
+.subject-btn.active, .subject-btn:hover {
+    background-color: #b3c0ff;
+    border: 2px solid #0000ff;
+}
+
+.quiz-workspace {
+    flex: 1;
+    background-color: #d0d4dc;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Visibility filter setups */
+.subject-panel {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.subject-panel.active {
+    display: flex;
+}
+
+/* Form block style mechanics */
+.section-card {
+    background: #ffffff;
+    border: 2px solid #9060b8;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 850px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    position: relative;
+}
+
+.question-card {
+    background: #ffffff;
+    border: 1px solid #b2b6bf;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 850px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.input-flat {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 0;
+    width: 100%;
+    outline: none;
+}
+
+.input-flat:focus {
+    border-bottom: 2px solid #0000ff;
+}
+
+.options-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-utility {
+    font-family: Arial, sans-serif;
+    padding: 5px 12px;
+    font-size: 12px;
+    background-color: #f0f2f5;
+    border: 1px solid #bcc0c8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-utility:hover {
+    background-color: #e4e7ed;
+}
+
+.bottom-controls {
+    display: flex;
+    height: 125px;
+    color: white;
+    text-align: center;
+}
+
+.creation-zone { flex: 1; background-color: #0000ff; padding: 12px; border-right: 2px solid white; }
+.export-zone { flex: 1; background-color: #ff0000; padding: 12px; }
+.bottom-controls h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.btn-group { display: flex; justify-content: center; gap: 30px; }
+
+.action-btn {
+    padding: 10px 22px;
+    font-size: 0.85rem;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.red-btn { background-color: #e60000; }
+.blue-btn { background-color: #0000cc; }
+.action-btn:hover { opacity: 0.9; }
