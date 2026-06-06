@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DualAssess Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>DualAssess Engine</h1>
+        <p>A Unified 5-in-1 Workspace for Structured Paper Exporting and Online Exam Deployment.</p>
+    </header>
+
+    <div class="middle-container">
+        <aside class="sidebar" id="sidebarContainer">
+            <button class="subject-btn active" data-subject="science">SCIENCE</button>
+            <button class="subject-btn" data-subject="english">ENGLISH</button>
+            <button class="subject-btn" data-subject="ethics">ETHICS</button>
+            <button class="subject-btn" data-subject="history">HISTORY</button>
+            <button class="subject-btn" data-subject="math">MATH</button>
+        </aside>
+
+        <main class="quiz-workspace" id="mainWorkspace">
+            <div id="panel-science" class="subject-panel active"></div>
+            <div id="panel-english" class="subject-panel"></div>
+            <div id="panel-ethics" class="subject-panel"></div>
+            <div id="panel-history" class="subject-panel"></div>
+            <div id="panel-math" class="subject-panel"></div>
+        </main>
+    </div>
+
+    <footer class="bottom-controls">
+        <div class="creation-zone">
+            <h3>BUTTONS FOR CREATING QUESTION</h3>
+            <div class="btn-group">
+                <button class="action-btn red-btn" id="createQuestionBtn">CREATE QUESTION +</button>
+                <button class="action-btn red-btn" id="addSectionBtn">ADD SECTION</button>
+            </div>
+        </div>
+        <div class="export-zone">
+            <h3>BUTTONS FOR EXPORTING%SAVING</h3>
+            <div class="btn-group">
+                <button class="action-btn blue-btn" id="exportToWordBtn">EXPORT TO WORD</button>
+                <button class="action-btn blue-btn" id="savePublishBtn">SAVED AND PUBLISH</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
